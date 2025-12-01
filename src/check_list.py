@@ -7,7 +7,7 @@ class Tarefa:
         self.concluida = False
 
     def __str__(self):
-        status = "✔ Concluída" if self.concluida else "⏳ Pendente"
+        status = "✔ Concluida" if self.concluida else "⏳ Pendente"
         return f"[{status}] {self.descricao} — Vence em: {self.vencimento}"
 
 
@@ -36,9 +36,9 @@ class ToDoList:
     def marcar_concluida(self, indice):
         try:
             self.tarefas[indice].concluida = True
-            print("Tarefa marcada como concluída!")
+            print("Tarefa marcada como concluida!")
         except:
-            print("Índice inválido.")
+            print("Indice invalido.")
 
     # DELETE
     def remover_tarefa(self, indice):
@@ -46,7 +46,7 @@ class ToDoList:
             self.tarefas.pop(indice)
             print("Tarefa removida!")
         except:
-            print("Índice inválido.")
+            print("Indice invalido.")
 
 
 def menu():
@@ -58,7 +58,7 @@ def menu():
         print("2. Listar todas")
         print("3. Listar pendentes")
         print("4. Listar concluídas")
-        print("5. Marcar tarefa como concluída")
+        print("5. Marcar tarefa como concluida")
         print("6. Remover tarefa")
         print("0. Sair")
 
@@ -90,7 +90,7 @@ def menu():
             break
 
         else:
-            print("Opção inválida!")
+            print("Opcao invalida!")
 
 
 menu()
