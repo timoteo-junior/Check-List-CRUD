@@ -7,7 +7,7 @@ class Tarefa:
         self.concluida = False
 
     def __str__(self):
-        status = "✔ Concluida" if self.concluida else "⏳ Pendente"
+        status = "Concluida" if self.concluida else "Pendente"
         return f"[{status}] {self.descricao} — Vence em: {self.vencimento}"
 
 
